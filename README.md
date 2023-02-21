@@ -42,3 +42,5 @@ Julian Graves
 
 
 ## License
+
+Licensed by MIT 
