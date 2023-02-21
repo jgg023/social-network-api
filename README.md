@@ -34,6 +34,10 @@ API.
 
 ## Tests 
 npm init -y 
+heroku deploy
+https://whispering-sierra-98392.herokuapp.com/
+git heroku
+https://git.heroku.com/whispering-sierra-98392.git
 
 ## Credits
 Julian Graves 
