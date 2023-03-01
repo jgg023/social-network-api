@@ -6,7 +6,7 @@ const {
   deleteuser,
   addAssignment,
   removeAssignment,
-} = require('../../controllers/userController');
+} = require('../../controllers/thoughtController');
 
 // /api/users
 router.route('/').get(getusers).post(createuser);
