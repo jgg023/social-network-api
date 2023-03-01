@@ -3,13 +3,13 @@ const { user, thought } = require('../models');
 module.exports = {
   // Get all users
   getusers(req, res) {
-    user.find()
+    User.find()
       .then((users) => res.json(users))
       .catch((err) => res.status(500).json(err));
   },
   // Get a user
   getSingleuser(req, res) {
-    user.findOne({ _id: req.params.userId })
+    User.findOne({ _id: req.params.userId })
       .select('-__v')
       .then((user) =>
         !user
@@ -20,7 +20,7 @@ module.exports = {
   },
   // Create a user
   createuser(req, res) {
-    user.create(req.body)
+    User.create(req.body)
       .then((user) => res.json(user))
       .catch((err) => {
         console.log(err);
@@ -29,7 +29,7 @@ module.exports = {
   },
   // Delete a user
   deleteuser(req, res) {
-    user.findOneAndDelete({ _id: req.params.userId })
+    User.findOneAndDelete({ _id: req.params.userId })
       .then((user) =>
         !user
           ? res.status(404).json({ message: 'No user with that ID' })
@@ -40,7 +40,7 @@ module.exports = {
   },
   // Update a user
   updateuser(req, res) {
-    user.findOneAndUpdate(
+    User.findOneAndUpdate(
       { _id: req.params.userId },
       { $set: req.body },
       { runValidators: true, new: true }
