@@ -20,6 +20,7 @@ module.exports = {
   },
   // Create a user
   createuser(req, res) {
+    console.log("increateuser")
     User.create(req.body)
       .then((user) => res.json(user))
       .catch((err) => {
