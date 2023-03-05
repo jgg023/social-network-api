@@ -39,6 +39,9 @@ https://whispering-sierra-98392.herokuapp.com/
 git heroku
 https://git.heroku.com/whispering-sierra-98392.git
 
+Video walkthrough is provided below :
+https://drive.google.com/file/d/1SH-jcjpluealgKYauqkrkF1R7hqbtz5b/view?usp=sharing
+
 ## Credits
 Julian Graves 
 
